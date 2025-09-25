@@ -7,7 +7,14 @@ function App() {
   return (
     <div>
       <Counter count={count} 
-      onIncrement={() => setCount(prev => prev + 1)}/>
+      onIncrement={
+        () => setCount(prev => prev + 1)
+      }/>
+
+      <Counter count={count} 
+      onIncrement={
+        () => setCount(prev => prev + 1)
+      }/>
       {/* <Counter/> */}
     </div>
   )
